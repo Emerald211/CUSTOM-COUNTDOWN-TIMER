@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Countdown</title>
+    <link rel="icon" type="image/png" href="alarm-clock.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <video class="video-background" loop autoplay muted>
+        <source src="./People - 84973 (1).mp4"> </source>
+    </video>
+
+    <div class="container">
+        <div class="input-container" id="input-container" >
+            <h1>Create a Custom Countdown</h1>
+
+            <form action="" class="form" id="countdownForm">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="What are you counting down for ?">
+                <label for="date-picker">Select a date</label>
+                <input type="date" id="date-picker" >
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="countdown" id="countdown" hidden>
+            <h1 id="countdown-title"></h1>
+            <ul>
+                <li><span></span> days</li>
+                <li><span></span> hour</li>
+                <li><span></span> minute</li>
+                <li><span></span> seconds</li>
+            </ul>
+            <button id="countdown-button">Reset</button>
+        </div>
+        <div class="complete" id="complete" hidden>
+            <h1 class="complete-title">Coundown Complete!</h1>
+            <h1 id="complete-info"></h1>
+            <button  id="complete-button">New Countdown</button>
+        </div>
+    </div>
+
+
+    <div class="video-overlay"></div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
